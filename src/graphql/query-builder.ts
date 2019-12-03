@@ -73,14 +73,14 @@ export default class QueryBuilder {
         `;
       } else {
         return `
-          ${header} {
+          {
             ${fields}
           }
         `;
       }
     } else {
       return `
-        ${name ? name : model.singularName}${params} {
+        {
           ${fields}
         }
       `;
